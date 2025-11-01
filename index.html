@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- This style.css file is assumed to exist from your original code -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    
+    <!-- Added inline styles as style.css is not provided, to ensure sections have padding -->
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            position: relative; /* Required for scrollspy */
+        }
+        header#home {
+            padding-top: 100px;
+            padding-bottom: 50px;
+            background-color: #f8f9fa; /* A light background for the header */
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        main section {
+            padding-top: 60px; /* Add padding to space out sections */
+        }
+        /* Ensure navbar links are visible on dark background */
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.85);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover,
+        .navbar-dark .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">My Resume</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">เกี่ยวกับตัวฉัน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">การศึกษา</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#employment">ประวัติการทำงาน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <!-- ADDED CERTIFICATES LINK -->
+                    <li class="nav-item"><a class="nav-link" href="#certificates">ใบรับรอง</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">ติดต่อ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="text-center">
+        <div class="container">
+            <!-- Added a placeholder image as 'Kasidech.png' is a local file -->
+            <img src="Kasidech.png"
+                 onerror="this.src='https://placehold.co/150x150/663399/FFFFFF?text=K.G'"
+                 class="rounded-circle profile-pic mb-3" alt="รูปโปรไฟล์">
+            <h1 class="display-4">กษิดิ์เดช กลิ่นโพธิ์กลับ</h1>
+            <p class="lead"><em>สาขาวิชาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์</em></p>
+            <p class="lead">คณะวิศวกรรมศาสตร์และเทคโนโลยี</p>
+            <p class="lead fw-bold">
+                <a href="http://pim.ac.th" target="_blank" class="text-decoration-none">
+                    สถาบันการจัดการปัญญาภิวัฒน์ (PIM)
+                </a>
+            </p>
+            <p class="mt-4 col-md-8 mx-auto">
+                AI PROMPT ENGINEER / AI PROMPT DESIGN
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2 class="mb-4 text-primary"><i class="bi bi-person-fill"></i> เกี่ยวกับตัวฉัน (About Me)</h2>
+            <p> ผมมีความสนใจในด้านปัญญาประดิษฐ์
+    โดยเฉพาะการออกแบบคำสั่ง เพื่อสร้างและพัฒนาเนื้อหาด้วย AI
+    มีความตั้งใจเรียนรู้เทคโนโลยีใหม่ ๆ และต้องการประยุกต์ AI เข้ากับการออกแบบ
+    การพัฒนาเว็บไซต์ และการสร้างสื่อดิจิทัลเชิงสร้างสรรค์</p>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="education" class="bg-light p-5 rounded-3">
+            <h2 class="mb-4 text-primary"><i class="bi bi-mortarboard-fill"></i> การศึกษา (Education)</h2>
+            <h5>สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</h5>
+            <p><strong>ปริญญาตรี:</strong> คณะวิศวกรรมศาสตร์และเทคโนโลยี สาขาวิชาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์</p>
+            <p class="text-muted">2566 - ปัจจุบัน | GPA: 3.31</p>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="employment">
+            <h2 class="mb-4 text-primary"><i class="bi bi-briefcase-fill"></i> ประวัติการทำงาน</h2>
+            <h5>ออกแบบ Logo และ สร้าง ADS ร้าน Smooth Day</h5>
+            <ul>
+                <li>ใช้ ChatGpt Gemini ในการวางแผนออกแบบ และ Gen Json Prompt</li>
+                <li>ใช้ Google Studio และ Nano Banana ในการปรับ และแก้ไขภาพ </li>
+                <li>ใช้ Sora Ai , Veo3 , Meta Ai ในการสร้างคลิปโฆษณา
+            </ul>
+        </section>
+
+        <hr class="my-5">
+
+        <section id="skills" class="bg-light p-5 rounded-3">
+            <h2 class="mb-4 text-primary"><i class="bi bi-gear-fill"></i> ทักษะ (Skills)</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong>Technical Skills</strong>
+                    <ul class="mt-2">
+                        <li>AI Prompt DESIGN</li>
+                        <li>AI TOOLS (ChatGPT, Gemini, Nano Banana)</li>
+                        <li>Python, SQL</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <strong>Soft Skills</strong>
+                    <ul class="mt-2">
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                        <li>Adaptability</li>
+                        <li>Creative Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5">
+
+        <!-- ADDED NEW CERTIFICATES SECTION -->
+        <section id="certificates" class="bg-light p-5 rounded-3">
+            <h2 class="mb-4 text-primary"><i class="bi bi-patch-check-fill"></i> ใบรับรอง (Certificates)</h2>
+            <div class="row">
+                <!-- Card 1 (CP ALL) - Link Added -->
+               
+                        <div class="card-body d-flex flex-column">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 (Google Prompting Essentials) - Layout adjusted -->
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Google Prompting Essentials</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Google & Coursera</h6>
+                            <p class="card-text">ใบรับรอง Specialization (กันยายน 2025)</p>
+                            <a href="https://www.canva.com/design/DAGzeZvW6XI/tkmH3vk1xidCC3v-heK1aQ/edit?utm_content=DAGzeZvW6XI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card-link mt-auto" target="_blank">ดูใบรับรอง</a>
+                            <!-- <a href="#" class="card-link mt-auto">ดูใบรับรอง</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 (Design Prompts) - Layout adjusted -->
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Design Prompts for Everyday Work Tasks</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Google & Coursera</h6>
+                            <p class="card-text">ใบรับรองหลักสูตร (กันยายน 2025)</p>
+                            <a href="https://www.canva.com/design/DAGzeZvW6XI/tkmH3vk1xidCC3v-heK1aQ/edit?utm_content=DAGzeZvW6XI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card-link mt-auto" target="_blank">ดูใบรับรอง</a>
+                            <!-- <a href="#" class="card-link mt-auto">ดูใบรับรอง</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 (Speed Up Data Analysis) - Layout adjusted -->
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Speed Up Data Analysis and Presentation Building</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Google & Coursera</h6>
+                            <p class="card-text">ใบรับรองหลักสูตร (กันยายน 2025)</p>
+                            <a href="https://www.canva.com/design/DAGzeZvW6XI/tkmH3vk1xidCC3v-heK1aQ/edit?utm_content=DAGzeZvW6XI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card-link mt-auto" target="_blank">ดูใบรับรอง</a>
+                            <!-- <a href="#" class="card-link mt-auto">ดูใบรับรอง</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 (Creative Partner) - Layout adjusted -->
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Use AI as a Creative or Expert Partner</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Google & Coursera</h6>
+                            <p class="card-text">ใบรับรองหลักสูตร (กันยายน 2025)</p>
+                            <a href="https://www.canva.com/design/DAGzeZvW6XI/tkmH3vk1xidCC3v-heK1aQ/edit?utm_content=DAGzeZvW6XI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card-link mt-auto" target="_blank">ดูใบรับรอง</a>
+                            <!-- <a href="#" class="card-link mt-auto">ดูใบรับรอง</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END OF NEW SECTION -->
+
+        <hr class="my-5">
+
+        <section id="contact">
+            <h2 class="mb-4 text-primary"><i class="bi bi-telephone-fill"></i> ติดต่อ (Contact)</h2>
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <strong>อีเมล์:</strong> kasidechglinpoglub@gmail.com
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <strong>เบอร์โทรศัพท์:</strong> 090-920-3249
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <i class="bi bi-github me-2"></i>
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/KasidechGlinpoglub" target="_blank">
+                                KasidechGlinpoglub
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p class="mb-0">&copy; 2568 Kasidech Glinpoglub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

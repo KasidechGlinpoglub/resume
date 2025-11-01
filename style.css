@@ -1,0 +1,28 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+}
+section {
+    scroll-margin-top: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+#home {
+    background-color: #f8f9fa;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.email-at {
+    font-weight: bold;
+    color: #0d6efd;
+}
+footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
